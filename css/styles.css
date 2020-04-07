@@ -1,0 +1,22 @@
+body{
+  background-image: url("https://i.dailymail.co.uk/i/pix/2014/02/06/article-2552906-1B3D57E100000578-57_964x721.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: georgia;
+}
+.jumbotron{
+  background-color: rgba(250, 235, 215, 0.712);
+  border-style: double;
+  border-width: 8px;
+  border-color: rgb(88, 42, 11);
+  text-align: center;
+}
+.head {
+  text-align: center;
+  font-size: 6.5em;
+  color: rgb(248, 248, 210);
+  letter-spacing: -3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px rgb(255, 251, 0), 0px 0px 7px #fff;
+}
