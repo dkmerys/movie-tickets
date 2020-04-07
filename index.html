@@ -13,8 +13,38 @@
   <div class="container">
     <div class="jumbotron">
       <div class="head"><h1>Welcome to the Movies</h1></div>
-      <h3>Please Select A Movie From The List Below</h3>
-    
+        <form id="box-office">
+        <br>
+        <h4>Please Select A Movie From The List Below</h4>
+        <br>
+        <div>
+          <select class="form-control" id="movie-title">
+            <option>Fast and Furious....innnnnnn Spaaaaaaace (New Release)</option>
+            <option>Hackers</option>
+            <option>Princess Bride</option>
+          </select>
+        </div>
+        <br>
+        <h4>Select A Movie Time</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="movie-time" value="cheap">
+            Afternoon (Matinee)
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="movie-time" value="fullPrice" checked>
+            Evening (Full Price)
+          </label>
+        </div>
+        <div class="age-form">
+          <label id="ageEntry">Please Enter Your Age</label>
+          <input type="text" id="age">
+        </div>
+        <button type="submit" class="btn btn-white btn-animated">Get Tickets</button>
+
+    </form>
     </div>
   </div>
 </body>
