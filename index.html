@@ -25,7 +25,7 @@
           </select>
         </div>
         <br>
-        <h4>Select A Movie Time</h4>
+        <h4>Please Select A Movie Time</h4>
         <div class="radio">
           <label>
             <input type="radio" name="movie-time" value="cheap">
@@ -42,9 +42,13 @@
           <label id="ageEntry">Please Enter Your Age</label>
           <input type="text" id="age">
         </div>
-        <button type="submit" class="btn btn-white btn-animated">Get Tickets</button>
-
-    </form>
+        <button type="submit" class="btn btn-white btn-animated">Get Ticket Price</button>
+        </form>
+      <div class ="results">
+      <div class="head2"><h2>Ticket Price</h2></div>
+        <h4><span id="showTime"></span></h4>
+        <h4>A Ticket For This Showing Is $<span id="priceOutput"></span></h4>
+      </div>
     </div>
   </div>
 </body>

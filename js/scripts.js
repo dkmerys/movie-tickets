@@ -26,6 +26,7 @@ Ticket.prototype.calculatePrice = function() {
     else {
       return price
     }
+    console.log(price)
   }
 
 
@@ -37,13 +38,15 @@ $(document).ready(function() {
     var inputtedMovieTitle = $("#movie-title").val();
     var inputtedMovieTime = $("input:radio[name=movie-time]:checked").val();
     var userAge = parseInt($("input#age").val());
-    // if (isNaN(userAge)){
-      // $("output").append("Please enter your age using a number.")
-      // } else {
-        // }
+    if (isNaN(userAge)){
+      $(".results").html("Please enter your age using a number.");
+      $("#showTime").hide();
+      }
         
     var ticket = new Ticket(inputtedMovieTitle, inputtedMovieTime, userAge);
-    // ticket.calculatePrice()
-    $("whatever").html(balloon.price)
+    // ticket.calculatePrice(ticket)
+    $("priceOutput").html(ticket.price);
+    $(".results").fadeToggle();
+    $("input#age").val("");
   })
 });
